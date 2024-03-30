@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo-color.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Nandini</span><br> Sharma From Jaipur</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm Nandini Sharma, a curious explorer at Banasthali Vidyapith, enchanted by the endless
+                        possibilities of web development. As I traverse through my academic journey, I've ventured deep
+                        into the realms of HTML, CSS, JavaScript, and dabbled in the intricate frameworks like React and
+                        Node.js, sculpting digital landscapes that dance with creativity and functionality. With each
+                        project, I've cultivated a diverse skill set, seamlessly weaving between frontend finesse and
+                        backend brilliance, all while fostering collaboration and a keen eye for innovation. Beyond the
+                        lines of code, I'm fueled by a fervent desire to harness technology's power for societal
+                        transformation, guiding and inspiring others to embark on their own digital odysseys. Looking
+                        forward, my ambition knows no bounds as I strive to push the boundaries of web development,
+                        breathe life into impactful projects, and carve a path of innovation in the ever-evolving
+                        digital tapestry.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br> Web Development</li>
+
+                                <li><span>Logo Design</span><br> Logo Designer</li>
+
+                                <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>No experience yet..</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2019</span><br> High School CBSE</li>
+                                <li><span>2020-2021</span><br> Senior Secondary School CBSE</li>
+                                <li><span>2021</span><br> B.Tech(Information Technology)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Assistify</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Nandini056/Assistify"><ion-icon name="share-social-outline"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Brew Bite</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Nandini056/BrewBite"><ion-icon name="share-social-outline"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Mausam</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Nandini056/Mausam"><ion-icon name="share-social-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Nandini056/IWTAssignment" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><ion-icon name="mail-outline"></ion-icon>nandinibhardwaj306@gmail.com</p>
+                    <p><ion-icon name="call-outline"></ion-icon> 0987654321</p>
+                    <div class="social-icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+                tabcontent.innerHTML = "";
+            }
+            event.currentTarget.classList.add("active-link");
+            var activeTabContent = document.getElementById(tabname);
+            activeTabContent.classList.add("active-tab");
+
+
+            if (tabname === 'skills') {
+                loadSkillsContent(activeTabContent);
+            } else if (tabname === 'experience') {
+                loadExperienceContent(activeTabContent);
+            } else if (tabname === 'education') {
+                loadEducationContent(activeTabContent);
+            }
+        }
+
+        function loadSkillsContent(tabContent) {
+            var skillsList = document.createElement('ul');
+            skillsList.innerHTML = `
+            <li><span>Web Development</span><br>  Web Development</li>
+            <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+            <li><span>Logo Design </span><br>Logo Designing</li>
+        `;
+            tabContent.appendChild(skillsList);
+        }
+
+        function loadExperienceContent(tabContent) {
+            var experienceList = document.createElement('ul');
+            experienceList.innerHTML = `
+            <li>No experience yet..</li>
+        `;
+            tabContent.appendChild(experienceList);
+        }
+
+        function loadEducationContent(tabContent) {
+            var educationList = document.createElement('ul');
+            educationList.innerHTML = `
+            <li><span>2018-2019</span><br>  High School CBSE</li>
+            <li><span>2020-2021</span><br> Senior Secondary School CBSE</li>
+            <li><span>2021</span><br> B.Tech(Information Technology)</li>
+        `;
+            tabContent.appendChild(educationList);
+        }
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
